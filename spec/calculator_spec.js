@@ -32,5 +32,12 @@ describe("Calculator", function(){
     Calculator.current = 20;
     Calculator.reset();
     expect(Calculator.current).toEqual(0);
+
+    Calculator.add(5);
+    Calculator.subtract(2);
+    expect(Calculator.current).toEqual(3);
+
+    Calculator.reset();
+    expect(Calculator.current).toEqual(0);
   })
 });
