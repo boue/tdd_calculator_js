@@ -17,5 +17,9 @@ window.Calculator = {
     }
     this.current = result;
     return result;
+  },
+
+  reset: function(){
+    this.current = 0;
   }
 };

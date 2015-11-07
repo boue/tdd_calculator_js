@@ -27,4 +27,10 @@ describe("Calculator", function(){
       expect(Calculator.subtract(5)).toEqual(-5);
     });
   });
+
+  it("should reset the current value", function(){
+    Calculator.current = 20;
+    Calculator.reset();
+    expect(Calculator.current).toEqual(0);
+  })
 });
